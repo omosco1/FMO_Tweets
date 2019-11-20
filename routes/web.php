@@ -15,7 +15,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::view('news','news');
 Auth::routes();
 Route::get('profile', 'UserController@profile');
 Route::post('profile', 'UserController@update_avatar');
